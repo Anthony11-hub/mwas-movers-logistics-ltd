@@ -305,10 +305,11 @@ input {
 
 .section-tagline {
     display: inline-block;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--accent-color);
     line-height: 2.4rem;
     margin-bottom: .8rem;
+    font-size: 2rem;
 }
 
 .section-title {
@@ -405,7 +406,7 @@ section:not(.hero) .button {
     background-color: #F5F5F5;
 }
 
-.programs .boxContainer {
+.programs .boxContainer, .boxContainer-3, .boxContainer-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
@@ -415,7 +416,7 @@ section:not(.hero) .button {
     margin-top: 50px;
 }
 
-.programs .boxContainer .box {
+.programs .boxContainer .box, .boxContainer-3 .box, .boxContainer-2 .box {
     background-color: var(--white);
     text-align: center;
     padding: 15px;
@@ -425,7 +426,7 @@ section:not(.hero) .button {
     margin-bottom: 15px;
 }
 
-.programs .boxContainer .box .cardImage {
+.programs .boxContainer .box .cardImage, .boxContainer-3 .box .cardImage, .boxContainer-2 .box .cardImage {
     width: 100%;
     height: 300px;
     background-position: center;
@@ -450,43 +451,84 @@ section:not(.hero) .button {
     background-image: url('../images/San+Antonio+Trucking+Company+-+Hazardous+Materials+Transport+San+Antonio+2.jpg');
 }
 
-.programs .boxContainer .box:nth-child(4) .cardImage,
-.programs .boxContainer .box:nth-child(4) .cardImage:after {
-    background-image: url('../images/R\ \(3\).jpeg');
+.programs .boxContainer-2 .box:nth-child(1) .cardImage,
+.programs .boxContainer-2 .box:nth-child(1) .cardImage:after {
+    background-image: url('../images/ballast.jpeg');
 }
 
-.programs .boxContainer .box:nth-child(5) .cardImage,
-.programs .boxContainer .box:nth-child(5) .cardImage:after {
+.programs .boxContainer-2 .box:nth-child(2) .cardImage,
+.programs .boxContainer-2 .box:nth-child(2) .cardImage:after {
     background-image: url('../images/large.jpg');
 }
 
-.programs .boxContainer .box:nth-child(6) .cardImage,
-.programs .boxContainer .box:nth-child(6) .cardImage:after {
+.programs .boxContainer-2 .box:nth-child(3) .cardImage,
+.programs .boxContainer-2 .box:nth-child(3) .cardImage:after {
     background-image: url('../images/maxresdefault.jpg');
 }
 
-.programs .boxContainer .box:hover .cardImage:after {
-    top: 100%;
+.programs .boxContainer-2 .box:nth-child(4) .cardImage,
+.programs .boxContainer-2 .box:nth-child(4) .cardImage:after {
+    background-image: url('../images/hardcore.jpeg');
 }
 
-.programs .boxContainer .box .programTitle {
+.programs .boxContainer-2 .box:nth-child(5) .cardImage,
+.programs .boxContainer-2 .box:nth-child(5) .cardImage:after {
+    background-image: url('../images/quarry\ dust.webp');
+}
+
+.programs .boxContainer-2 .box:nth-child(6) .cardImage,
+.programs .boxContainer-2 .box:nth-child(6) .cardImage:after {
+    background-image: url('../images/R\ \(3\).jpeg');
+}
+
+.programs .boxContainer-3 .box:nth-child(1) .cardImage,
+.programs .boxContainer-3 .box:nth-child(1) .cardImage:after {
+    background-image: url('../images/ladimir-ladroid-6VxMxLeffYE-unsplash.jpg');
+}
+
+.programs .boxContainer-3 .box:nth-child(2) .cardImage,
+.programs .boxContainer-3 .box:nth-child(2) .cardImage:after {
+    background-image: url('../images/water.jpeg');
+}
+
+.programs .boxContainer-3 .box:nth-child(3) .cardImage,
+.programs .boxContainer-3 .box:nth-child(3) .cardImage:after {
+    background-image: url('../images/tata-motors-truck-commercial-vehicle-16623742653x2.webp');
+}
+
+/* Initial state for cardImage and cardImage:after */
+.programs .boxContainer-3 .box .cardImage,
+.programs .boxContainer-3 .box .cardImage:after {
+    background-size: cover;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+    transform: scale(1);
+}
+
+/* Hover state for cardImage and cardImage:after */
+.programs .boxContainer-3 .box:hover .cardImage,
+.programs .boxContainer-3 .box:hover .cardImage:after {
+    transform: scale(0.95); /* Scale the image up by 10% */
+}
+
+.programs .boxContainer .box .programTitle, .boxContainer-3 .box .programTitle, .boxContainer-2 .box .programTitle {
     font-size: 15px;
     margin-top: 15px;
     font-weight: 600;
     color: #444;
 }
 
-.programs .boxContainer .box .text {
+.programs .boxContainer .box .text, .boxContainer-3 .box .text, .boxContainer-2 .box .text {
     font-size: 12px;
     padding: 7px 15px;
+    margin-bottom: 10px;
 }
 
-.programs .boxContainer .box button {
-    margin-top: 10px;
+.button-action {
+    margin-bottom: 20px;
     border: 2px solid #111;
     color: #000;
     bottom: -15px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 7px 15px;
     outline: 0;
     transition: 0.4s;
@@ -499,14 +541,14 @@ section:not(.hero) .button {
 }
 
 @media screen and (max-width: 1024px) {
-    .programs .boxContainer {
+    .programs .boxContainer, .boxContainer-3, .boxContainer-2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 @media screen and (max-width: 425px) {
-    .programs .boxContainer {
+    .programs .boxContainer, .boxContainer-3, .boxContainer-2 {
         grid-template-columns: 1fr;
     }
 }
