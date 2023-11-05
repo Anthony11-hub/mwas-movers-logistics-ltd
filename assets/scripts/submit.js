@@ -1,7 +1,7 @@
-document.getElementById('contact').addEventListener('submit', createBooking);
+document.getElementById("contact").addEventListener("submit", createBooking);
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000/api/v1/bookings',
+  baseURL: "https://good-gray-octopus-suit.cyclic.app/api/v1/post",
 });
 
 function createBooking(e) {
@@ -13,11 +13,9 @@ function createBooking(e) {
   const address = document.querySelector('input[name="address"]').value;
   const postalCode = document.querySelector('input[name="postalCode"]').value;
 
-  // Get selected region and service from dropdowns
-  const region = document.querySelector('#region').value;
-  const service = document.querySelector('#service').value;
+  const region = document.querySelector("#region").value;
+  const service = document.querySelector("#service").value;
 
-  // Create an object with the data
   const data = {
     name,
     email,
@@ -28,32 +26,28 @@ function createBooking(e) {
     service,
   };
 
-  // Ensure you have the 'Content-Type' header in the config
   const config = {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   };
 
   axiosInstance
-    .post('', data, config) // Pass the data as the second argument
+    .post("", data, config)
     .then((response) => {
       if (response.status === 201) {
-        // Booking created successfully
-        // Clear the form
-        document.querySelector('input[name="name"]').value = '';
-        document.querySelector('input[name="email"]').value = '';
-        document.querySelector('input[name="phoneNumber"]').value = '';
-        document.querySelector('input[name="address"]').value = '';
-        document.querySelector('input[name="postalCode"]').value = '';
-        document.querySelector('#region').value = ''; // Clear the region dropdown
-        document.querySelector('#service').value = ''; // Clear the service dropdown
+        document.querySelector('input[name="name"]').value = "";
+        document.querySelector('input[name="email"]').value = "";
+        document.querySelector('input[name="phoneNumber"]').value = "";
+        document.querySelector('input[name="address"]').value = "";
+        document.querySelector('input[name="postalCode"]').value = "";
+        document.querySelector("#region").value = "";
+        document.querySelector("#service").value = "";
       } else {
-        console.error('Failed to create booking:', response.statusText);
+        console.error("Failed to create booking:", response.statusText);
       }
     })
     .catch((err) => {
-      // Handle errors
       if (err.response) {
         console.log(err.response.data);
         console.log(err.response.status);

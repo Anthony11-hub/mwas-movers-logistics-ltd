@@ -35,14 +35,13 @@
     --black_70: hsla(0, 0%, 0%, 0.7);
     --rajah: hsl(29, 99%, 67%);
     --white: hsl(0, 0%, 100%);
-  
-    --gradient-1: linear-gradient(90deg,  #FFD700 0,  #FFD700 51%,   #FFD700);
+
+    --gradient-1: linear-gradient(90deg, #FFD700 0, #FFD700 51%, #FFD700);
     --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
     --gradient-3: linear-gradient(90deg, #111, #111);
 }
 
 html {
-    /* font-size: 10px; */
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -84,9 +83,9 @@ input {
 .d-grid {
     display: grid;
 }
+
 /* !HEADER */
 #header {
-    /* padding-top: 4rem; */
     border-bottom: 1px solid #111;
 }
 
@@ -111,7 +110,7 @@ input {
 .menu-toggler {
     width: 5.6rem;
     height: 4rem;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .4rem;
     line-height: 1;
     position: relative;
@@ -225,7 +224,6 @@ input {
 }
 
 .title {
-    /* color: var(--dark-color); */
     color: white;
     font-weight: 700;
 }
@@ -287,7 +285,7 @@ input {
     width: 5rem;
     border-radius: 50%;
     margin-right: 1.2rem;
-    box-shadow: 0 .5rem 2rem rgba(0,0,0,.08);
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .08);
 }
 
 .button-transparent {
@@ -298,6 +296,7 @@ input {
 .button-transparent:focus img {
     transform: scale(1.1);
 }
+
 /* !WHAT WE SERVE */
 .section-metadata {
     text-align: center;
@@ -354,6 +353,7 @@ input {
 .card-body p {
     line-height: 2.5rem;
 }
+
 /* !WHY CHOOSE US */
 .about-section {
     padding: 5rem 0;
@@ -500,14 +500,14 @@ section:not(.hero) .button {
 .programs .boxContainer-3 .box .cardImage,
 .programs .boxContainer-3 .box .cardImage:after {
     background-size: cover;
-    transition: transform 0.3s; /* Add a smooth transition effect */
+    transition: transform 0.3s;
     transform: scale(1);
 }
 
 /* Hover state for cardImage and cardImage:after */
 .programs .boxContainer-3 .box:hover .cardImage,
 .programs .boxContainer-3 .box:hover .cardImage:after {
-    transform: scale(0.95); /* Scale the image up by 10% */
+    transform: scale(0.95);
 }
 
 .programs .boxContainer .box .programTitle, .boxContainer-3 .box .programTitle, .boxContainer-2 .box .programTitle {
@@ -555,25 +555,26 @@ section:not(.hero) .button {
 
 
 /* tesimonial */
-.testimonial-section{
-	background-image: -webkit-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)), url('../images/nelson-gono-h-kD4142VIQ-unsplash.jpg');
-	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)), url('../images/nelson-gono-h-kD4142VIQ-unsplash.jpg');
-	text-align: center;
-	background-size: cover;
-	color: #fff;
-	background-attachment: fixed;
+.testimonial-section {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('../images/nelson-gono-h-kD4142VIQ-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('../images/nelson-gono-h-kD4142VIQ-unsplash.jpg');
+    text-align: center;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
     height: 500px;
 }
 
-.testimonial-box{
-	text-align: left;
-	margin-bottom: 50px;
+.testimonial-box {
+    text-align: left;
+    margin-bottom: 50px;
 }
-blockquote{
-	padding: 10%;
-	line-height: 145%;
-	position: relative;
-	margin-top: 40px;
+
+blockquote {
+    padding: 10%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
     font-size: 25px;
     font-weight: 600;
     text-align: center;
@@ -582,7 +583,6 @@ blockquote{
 
 /* ship */
 .shipment {
-    /* background-color: #F5F5F5; */
     margin-top: 60px;
     margin-bottom: 70px;
 }
@@ -607,33 +607,33 @@ blockquote{
 #contact input[type="area"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
 #contact {
-  padding: 25px;
+    padding: 25px;
 }
 
 #contact h3 {
-  display: block;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 #contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
 }
 
 #contact input[type="text"],
@@ -645,12 +645,12 @@ fieldset {
 #contact input[type="area"],
 #contact select,
 #contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  border-radius: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #contact input[type="text"]:hover,
@@ -662,64 +662,62 @@ fieldset {
 #contact input[type="area"]:hover,
 #contact select,
 #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
 }
 
 #contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
+    height: 100px;
+    max-width: 100%;
+    resize: none;
 }
 
 #contact button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: #4CAF50;
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
-  /* -webkit-transition: background 0.3s ease-in-out; */
-  /* -moz-transition: background 0.3s ease-in-out; */
-  transition: background-color 0.3s ease-in-out;
+    background: #43A047;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .copyright {
-  text-align: center;
+    text-align: center;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-  outline: 0;
-  border: 1px solid #aaa;
+    outline: 0;
+    border: 1px solid #aaa;
 }
 
 ::-webkit-input-placeholder {
-  color: #888;
+    color: #888;
 }
 
 :-moz-placeholder {
-  color: #888;
+    color: #888;
 }
 
 ::-moz-placeholder {
-  color: #888;
+    color: #888;
 }
 
 :-ms-input-placeholder {
-  color: #888;
+    color: #888;
 }
 
 .shipment .boxContainer .box button:hover {
@@ -784,7 +782,7 @@ fieldset {
 .horizontal-line {
     margin-block: 3rem;
     border: none;
-    border-top: 1px solid rgba(0,0,0,.5);
+    border-top: 1px solid rgba(0, 0, 0, .5);
 }
 
 .copyright-information {
@@ -801,8 +799,9 @@ fieldset {
 .legal-information a:focus {
     color: var(--accent-color);
 }
+
 /* !MEDIA QUERIES */
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .why-section .section-metadata {
         text-align: left;
     }
@@ -846,13 +845,13 @@ fieldset {
         width: 7rem;
     }
 
-    .text-content-group, 
+    .text-content-group,
     .section-metadata {
         text-align: left;
     }
 
-    .steps-section .section-metadata, 
-    .programs .section-metadata, 
+    .steps-section .section-metadata,
+    .programs .section-metadata,
     .shipment .section-metadata {
         text-align: center !important;
     }
@@ -899,7 +898,7 @@ fieldset {
         transition: none;
     }
 
-    .collapsible-menu > .list {
+    .collapsible-menu>.list {
         flex-direction: row;
         margin: 0 auto;
     }
