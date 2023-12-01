@@ -185,6 +185,7 @@ input {
 }
 
 input,
+select,
 textarea {
     width: 100%;
 }
@@ -295,11 +296,13 @@ textarea {
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--white);
+    border: 1px solid var(--accent-color) !important;
 }
 
 .btn-primary:is(:hover, :focus) {
     background-color: var(--white);
     color: var(--accent-color);
+    /* border: 1px solid var(--accent-color) !important; */
 }
 
 .flex-btn {
@@ -468,10 +471,10 @@ textarea {
 \*-----------------------------------*/
 
 .hero {
-    padding: 6rem 0 5rem;
+    /* padding: 6rem 0 5rem; */
     background-image: url("../images/gabriel-santos-GBVDilE8yvI-unsplash-3.jpg");
     /* background-size: auto, cover, auto; */
-    padding-block-start: 120px;
+    padding-block-start: 200px;
     background-size: cover;
     text-align: center;
     overflow: hidden;
@@ -872,7 +875,8 @@ textarea {
     font-size: 1.7rem;
     padding: 15px;
     border-radius: 7px;
-    outline: 1px solid transparent;
+    border: 1px solid var(--platinum) !important;
+    /* outline: 1px solid var(--body-font-color); */
     outline-offset: 0;
     margin-block-end: 15px;
 }
@@ -882,7 +886,7 @@ textarea {
 }
 
 .input-field:focus {
-    outline-color: var(--accent-color);
+    outline-color: var(--accent-color) !important;
 }
 
 .input-field::placeholder {
@@ -978,7 +982,7 @@ textarea.input-field {
 /* TESTIMONIALS */
 body .testimonial {
     padding: 100px 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body .testimonial .row .tabs {
@@ -1117,7 +1121,7 @@ body .testimonial .row .tabs.carousel-indicators li.active figure::after {
 }
 
 body .testimonial .row .carousel>h3 {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.45;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
@@ -1125,7 +1129,7 @@ body .testimonial .row .carousel>h3 {
 }
 
 body .testimonial .row .carousel h1 {
-    font-size: 40px;
+    font-size: 2.6rem;
     line-height: 1.225;
     margin-top: 23px;
     font-weight: 700;
@@ -1150,7 +1154,7 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
 }
 
 body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.72222;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
@@ -1163,6 +1167,56 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
     font-size: 20px;
     line-height: 1.45;
     text-transform: uppercase;
+}
+
+/* Add this for smaller screens */
+@media only screen and (max-width: 767px) {
+    body .testimonial .carousel h1 {
+        font-size: 30px;
+        /* Adjust the font size as needed */
+    }
+
+    body .testimonial .carousel h3 {
+        font-size: 18px;
+        /* Adjust the font size as needed */
+    }
+
+    body .testimonial .carousel .carousel-inner .carousel-item .quote-wrapper p {
+        font-size: 16px;
+        /* Adjust the font size as needed */
+    }
+
+    body .testimonial .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+        font-size: 18px;
+        /* Adjust the font size as needed */
+        margin-top: 30px;
+        /* Adjust spacing as needed */
+    }
+}
+
+/* Add this for medium-sized screens */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    body .testimonial .carousel h1 {
+        font-size: 36px;
+        /* Adjust the font size as needed */
+    }
+
+    body .testimonial .carousel h3 {
+        font-size: 24px;
+        /* Adjust the font size as needed */
+    }
+
+    body .testimonial .carousel .carousel-inner .carousel-item .quote-wrapper p {
+        font-size: 18px;
+        /* Adjust the font size as needed */
+    }
+
+    body .testimonial .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+        font-size: 20px;
+        /* Adjust the font size as needed */
+        margin-top: 35px;
+        /* Adjust spacing as needed */
+    }
 }
 
 @media only screen and (max-width: 1200px) {
