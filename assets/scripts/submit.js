@@ -8,20 +8,15 @@ function createBooking(e) {
   e.preventDefault();
 
   const name = document.querySelector('input[name="name"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
-  const address = document.querySelector('input[name="address"]').value;
-  const postalCode = document.querySelector('input[name="postalCode"]').value;
-
-  const region = document.querySelector("#region").value;
+  const email = document.querySelector('input[name="email_address"]').value;
+  const phoneNumber = document.querySelector('input[name="phone"]').value;
+  const region = document.querySelector('input[name="region"]').value;
   const service = document.querySelector("#service").value;
 
   const data = {
     name,
     email,
     phoneNumber,
-    address,
-    postalCode,
     region,
     service,
   };
@@ -37,11 +32,9 @@ function createBooking(e) {
     .then((response) => {
       if (response.status === 201) {
         document.querySelector('input[name="name"]').value = "";
-        document.querySelector('input[name="email"]').value = "";
-        document.querySelector('input[name="phoneNumber"]').value = "";
-        document.querySelector('input[name="address"]').value = "";
-        document.querySelector('input[name="postalCode"]').value = "";
-        document.querySelector("#region").value = "";
+        document.querySelector('input[name="email_address"]').value = "";
+        document.querySelector('input[name="phone"]').value = "";
+        document.querySelector('input[name="region"]').value = "";
         document.querySelector("#service").value = "";
       } else {
         console.error("Failed to create booking:", response.statusText);
