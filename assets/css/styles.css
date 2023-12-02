@@ -637,7 +637,7 @@ textarea {
 \*-----------------------------------*/
 
 .about {
-    background-color: var(--white-2);
+    background-color: #F7F7F7;
 }
 
 .about .container {
@@ -877,7 +877,7 @@ textarea {
   #CONTACT
 \*-----------------------------------*/
 .contact {
-    background-color: var(--white-2);
+    background-color: #F7F7F7;
 }
 
 .contact .section-text {
