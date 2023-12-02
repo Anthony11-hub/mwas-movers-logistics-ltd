@@ -472,7 +472,7 @@ textarea {
 
 .hero {
     /* padding: 6rem 0 5rem; */
-    background-image: url("../images/gabriel-santos-GBVDilE8yvI-unsplash-3-min.jpg");
+    background-image: url("../images/maxim-tolchinskiy-crHhZlES310-unsplash.jpg");
     /* background-size: auto, cover, auto; */
     padding-block-start: 200px;
     background-size: cover;
@@ -488,8 +488,8 @@ textarea {
 }
 
 .hero .container {
-    display: grid;
-    gap: 50px;
+    /* display: grid; */
+    /* gap: 50px; */
 }
 
 .hero-subtitle {
@@ -1511,7 +1511,7 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
    */
 
     .hero {
-        text-align: left;
+        text-align: center;
     }
 
     .hero .container {
@@ -1520,11 +1520,12 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
     }
 
     .hero-subtitle {
-        margin-inline: 25px 0;
+        /* margin-inline: 25px 0; */
+        text-align: center;
     }
 
     .hero .btn-group {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     /**
