@@ -826,6 +826,30 @@ textarea {
     transform: translateY(-10px);
 }
 
+.service .grid-list li:nth-child(1) .service-card:is(:hover, :focus-within) {
+    border: 1px solid #13c4a1;
+}
+
+.service .grid-list li:nth-child(2) .service-card:is(:hover, :focus-within) {
+    border: 1px solid #6610f2;
+}
+
+.service .grid-list li:nth-child(3) .service-card:is(:hover, :focus-within) {
+    border: 1px solid #ffb700;
+}
+
+.service .grid-list li:nth-child(4) .service-card:is(:hover, :focus-within) {
+    border: 1px solid #fc3549;
+}
+
+.service .grid-list li:nth-child(5) .service-card:is(:hover, :focus-within) {
+    border: 1px solid #00d280;
+}
+
+.service .grid-list li:nth-child(6) .service-card:is(:hover, :focus-within) {
+    border: 1px solid #ff612f;
+}
+
 .service-card .card-icon {
     color: var(--white);
     font-size: 25px;
