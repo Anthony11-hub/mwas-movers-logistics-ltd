@@ -1,0 +1,281 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --white-1: hsl(0, 0%, 100%);
+    --white-2: hsl(0, 14%, 98%);
+    --accent-color: #F94C10;
+}
+
+.hero {
+    background-image: url("../images/car.jpg");
+}
+
+/* car selection */
+/* Styles for the vehicle section */
+.vehicle ion-icon,
+.vehicle img,
+.vehicle span {
+    display: inline-block;
+    /* or any other styles specific to the vehicle section */
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+}
+
+.vehicle .heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.content p {
+    font-size: 13px;
+}
+
+.vehicle .slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.vehicle .slider .wrapper {
+    position: relative;
+}
+
+.vehicle .slider .wrapper .preNext {
+    cursor: pointer;
+    font-size: 50px;
+    text-align: center;
+    height: 60%;
+    color: var(--accent-color);
+    z-index: 1;
+}
+
+.vehicle .slider .wrapper .preNext#preBtn {
+    position: absolute;
+    padding-top: 10%;
+    width: 30%;
+    top: 0;
+    left: 0;
+}
+
+.vehicle .slider .wrapper .preNext#nextBtn {
+    position: absolute;
+    padding-top: 10%;
+    width: 30%;
+    top: 0;
+    right: 0;
+}
+
+.vehicle .slider .activeCircle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.vehicle .slider .activeCircle .circle ion-icon {
+    color: var(--accent-color);
+    /* padding-top: 30px; */
+}
+
+.vehicle .slider .content ion-icon {
+    font-size: 12.5px;
+}
+
+.vehicle .slider .wrapper .wrapper-box {
+    display: flex;
+    transition: transform .5s ease-in-out;
+    margin-left: 24vw;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box {
+    width: 300px;
+    text-align: center;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box img {
+    cursor: pointer;
+    width: 240px;
+    height: auto;
+    opacity: .5;
+    max-width: none;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box .content {
+    margin-top: 5rem;
+    display: none;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box.active {
+    width: 100%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box.active img {
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box.active .content {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+}
+
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    border-radius: 5px;
+    max-width: max-content;
+    transition: 0.5s ease;
+    border: none;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    border: 1px solid var(--accent-color) !important;
+}
+
+.btn-primary:is(:hover, :focus) {
+    background-color: white;
+    color: black;
+    /* border: 1px solid var(--accent-color) !important; */
+}
+
+/* education */
+.educationSection .container {
+    width: 1140px;
+    margin: auto;
+}
+
+.education {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.education .videoPlayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.education .sectionTitle {
+    color: var(--white);
+    text-shadow: 0 0 4px #000;
+}
+
+.education .educationContainer {
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top: 35vh;
+    color: var(--white);
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.education .educationContainer h3 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.education .educationContainer p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+
+.education .educationContainer button {
+    background-color: var(--accent-color);
+    border: 0;
+    color: var(--white);
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+    .educationSection .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .education .videoPlayer {
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .education .educationContainer {
+        width: 90%;
+    }
+
+    .education .educationContainer h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .education .educationContainer p {
+        margin: 10px 0 20px;
+    }
+
+    .vehicle .slider .wrapper .wrapper-box {
+        margin-left: 20vw;
+    }
+
+    .vehicle .slider .wrapper .preNext#preBtn {
+        width: 20vw;
+    }
+
+    .vehicle .slider .wrapper .preNext#nextBtn {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .vehicle .slider .wrapper .wrapper-box .box {
+        display: none;
+    }
+
+    .vehicle .slider .wrapper .wrapper-box .box.active {
+        display: block;
+        margin-left: -15%;
+        margin-right: auto;
+    }
+
+    .vehicle .slider .wrapper .wrapper-box .box.active img {
+        transform: scale(1);
+    }
+
+    .vehicle .slider .wrapper .preNext#preBtn {
+        width: 15vw;
+        padding-top: 17%;
+    }
+
+    .vehicle .slider .wrapper .preNext#nextBtn {
+        width: 15vw;
+        padding-top: 17%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .education .educationContainer h3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
