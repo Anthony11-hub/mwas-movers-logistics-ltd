@@ -239,7 +239,7 @@
               appropriate time to offer a quote of our services
             </p>
 
-            <form class="contact-form" id="contact">
+            <form class="contact-form" id="contact" method="post">
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -251,7 +251,7 @@
 
                 <input
                   type="email"
-                  name="email_address"
+                  name="email"
                   aria-label="email"
                   placeholder="Email address*"
                   required
@@ -273,16 +273,14 @@
                   placeholder="Phone number*"
                   class="input-field" />
               </div>
-
-              <div class="input-wrapper">
-                <select
-                  name="service"
-                  aria-label="service"
-                  id="service"
-                  class="input-field">
-                  <option value="car-hire" selected>Car Hire</option>
-                </select>
-              </div>
+              <select id="service" class="input-field" name="service" required>
+                <option value="home moving">Home Moving</option>
+                <option value="office relocation">Office Relocation</option>
+                <option value="car hire">Car Hire</option>
+                <option value="construction">
+                  Transporting Construction Items
+                </option>
+              </select>
 
               <div class="checkbox-wrapper">
                 <input
@@ -458,5 +456,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
     <script src="assets/scripts/car-slider.js"></script>
+    <script src="./assets/scripts/submit.js"></script>
   </body>
 </html>

@@ -403,7 +403,7 @@
               appropriate time to offer a quote of our services
             </p>
 
-            <form class="contact-form" id="contact">
+            <form class="contact-form" id="contact" method="post">
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -415,7 +415,7 @@
 
                 <input
                   type="email"
-                  name="email_address"
+                  name="email"
                   aria-label="email"
                   placeholder="Email address*"
                   required
@@ -437,30 +437,14 @@
                   placeholder="Phone number*"
                   class="input-field" />
               </div>
-
-              <div class="input-wrapper">
-                <select
-                  name="service"
-                  aria-label="service"
-                  id="service"
-                  class="input-field">
-                  <option value="" disabled selected hidden>
-                    Pick a Service*
-                  </option>
-                  <option value="local-moving">Local Moving</option>
-                  <option value="long-distance-moving">
-                    Long Distance Moving
-                  </option>
-                  <option value="packing-unpacking">
-                    Packing and Unpacking
-                  </option>
-                  <option value="office-relocation">Office Relocation</option>
-                  <option value="car-hire">Car Hire</option>
-                  <option value="construction-moving">
-                    Construction Moving
-                  </option>
-                </select>
-              </div>
+              <select id="service" class="input-field" name="service" required>
+                <option value="home moving">Home Moving</option>
+                <option value="office relocation">Office Relocation</option>
+                <option value="car hire">Car Hire</option>
+                <option value="construction">
+                  Transporting Construction Items
+                </option>
+              </select>
 
               <div class="checkbox-wrapper">
                 <input
