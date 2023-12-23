@@ -389,13 +389,17 @@ textarea {
     /* padding: 0; */
 }
 
-.logo {
+/* .logo {
+    padding-left: 10px;
+} */
+
+/* .logo {
     color: var(--accent-color) !important;
     font-family: var(--ff-cuprum) !important;
     font-size: 33px !important;
     font-weight: var(--fw-500) !important;
     line-height: 1 !important;
-}
+} */
 
 .nav-open-btn {
     color: var(--accent-color);

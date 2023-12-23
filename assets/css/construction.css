@@ -25,3 +25,68 @@
     text-transform: uppercase;
     font-weight: 800;
 }
+
+/* construction equipements */
+/*-----------------------------------*\
+  #OUR PROGRAMS
+\*-----------------------------------*/
+.programs-section {
+    padding-block: 80px;
+    background-color: var(--light-gray);
+}
+
+.programs-section .section-title,
+.programs-section .section-text {
+    color: var(--eerie-black-1);
+    margin-block-end: 50px;
+}
+
+.programs-section .program-cards {
+    margin-inline: -15px;
+    padding-inline: 15px;
+    scroll-padding-inline-start: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.card {
+    position: relative;
+    box-shadow: var(--shadow-2);
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--xiketic_90);
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.card .card-title {
+    margin-block-end: 12px;
+    transition: var(--transition);
+}
+
+.card-content .btn {
+    color: var(--white);
+}
+
+
+@media (min-width: 576px) {
+
+    /* programs */
+    .programs-section .program-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* programs */
+    .programs-section .program-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
