@@ -389,9 +389,28 @@ textarea {
     /* padding: 0; */
 }
 
-/* .logo {
+
+.company-name {
+    color: var(--accent-color);
+    font-family: var(--ff-cuprum);
+    font-size: 18px;
+    font-weight: var(--fw-500);
+    line-height: 1;
     padding-left: 10px;
-} */
+    opacity: 0;
+}
+
+@media screen and (min-width: 612px) {
+    .company-name {
+        opacity: 1;
+    }
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* .logo {
     color: var(--accent-color) !important;
