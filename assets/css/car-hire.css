@@ -3,6 +3,7 @@
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 14%, 98%);
     --accent-color: #F94C10;
+    --white-3: hsl(0, 14%, 90%);
 }
 
 .hero {
@@ -34,6 +35,15 @@
 .content p {
     font-size: 13px;
 }
+
+.vehicle-specs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
 
 .vehicle .slider {
     padding-top: 50px;
@@ -101,7 +111,7 @@
 
 .vehicle .slider .wrapper .wrapper-box .box img {
     cursor: pointer;
-    width: 240px;
+    width: 250px;
     height: auto;
     opacity: .5;
     max-width: none;
@@ -110,6 +120,27 @@
 .vehicle .slider .wrapper .wrapper-box .box .content {
     margin-top: 5rem;
     display: none;
+    background-color: var(--white-3);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box .content p {
+    margin: 1rem 0;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box .content .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.vehicle .slider .wrapper .wrapper-box .box .content .price span {
+    color: var(--accent-color);
 }
 
 .vehicle .slider .wrapper .wrapper-box .box.active {

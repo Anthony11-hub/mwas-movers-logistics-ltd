@@ -4,6 +4,7 @@
     --white: hsl(0, 0%, 100%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 14%, 98%);
+    --xiketic: hsl(277, 25%, 10%);
 }
 
 .about-banner img {
@@ -62,9 +63,9 @@
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
-    border-radius: 10px;
-    height: 80%;
-    background-color: hsl(158, 29%, 5%);
+    border-radius: 5px;
+    height: 100%;
+    background-color: #1a1a1a;
 }
 
 .gallery-image {
@@ -77,7 +78,7 @@
 }
 
 .image-description {
-    padding-top: 20px;
+    padding-top: 10px;
     /* padding-bottom: 10px; */
     font-weight: 700;
     text-transform: uppercase;
@@ -85,8 +86,10 @@
     color: var(--white);
 }
 
-.gallery-image:hover {
-    transform: scale(1.15);
+
+.gallery-item:hover {
+    /* transform: scale(1.15); */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
 }
 
 @supports (display: grid) {
